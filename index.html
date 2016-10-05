@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html  lang="en-us" ng-app="myApp">
   
-    <head lang="en">
+    <head>
         
         <meta charset="utf-8">
-        <title></title>
+        <title>Learn and Understand AngularJS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!--<link href="style.css" type="text/css" rel="stylesheet"/>-->
         <script src="https://code.jquery.com/jquery.min.js"></script>
         <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
         <script src="app.js"></script>
         
     </head>
@@ -20,7 +20,7 @@
             <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-header">
-                        <a class="navbar-brand" href="/">jQuery</a>
+                        <a class="navbar-brand" href="/">AngularJS</a>
                     </div>
 
                     <ul class="nav navbar-nav navbar-right">
@@ -32,13 +32,12 @@
 
         <div class="container">
 
-            <div class="row">
-                <div class="col-md-12">
+            <div ng-controller="mainController">
 
-                    <h1 ng-reply="Hello back!">Hello world!</h1>
+                <h1>Hello world!</h1>
 
-                </div>
             </div>
+            
         </div>
     </body>
 
