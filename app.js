@@ -1,13 +1,11 @@
-var myApp = angular.module('myApp', []);
+var myApp = angular.module('myApp', ['ngMessages']);
 
-myApp.controller('mainController', function ($scope) {
+myApp.controller('mainController', function ($log, $scope, $filter) {
     
-    console.log($scope);
+    $scope.name = 'John';
+    $scope.formattedname = $filter('uppercase')($scope.name);
+
+    $log.info($scope.name);
+    $log.info($scope.formattedname);
 
 });
-
-var searchPeople = function (firstName, $scope, height, age, occupation) {
-    return 'Jane Doe';
-};
-
-console.log(angular.injector().annotate(searchPeople));
